@@ -7,25 +7,14 @@ import java.util.List;
 public class CommonPrefix {
 
 
-
-                    //input= "ababaa";
-                    //commonPrefix="";
-                    //residualString="ababaa";count=6
-
-                    //input= "babaa";
-                    //commonPrefix="a";
-                    //residualString="babaa";count =0
-
-                    //input= "abaa";
-                    //commonPrefix="ab";
-                    //residualString="aa";count =2
-
-                    //input= "baa";
-                    //commonPrefix="aba";
-                    //residualString="aa";count =2
-
-
-
+/*
+                    input= "ababaa"; commonPrefix=""; sum=6
+                    input= "babaa"; commonPrefix="a"; sum=6
+                    input= "abaa"; commonPrefix="ab"; sum=sum+2=8
+                    input= "baa"; commonPrefix="aba"; sum=8
+                    input= "aa"; commonPrefix="abab"; sum=8
+                    input= "a"; commonPrefix="ababa"; sum=sum+1=9
+*/
 
 
 
@@ -34,7 +23,7 @@ public class CommonPrefix {
         List<Integer> counts= new ArrayList<>();
         Arrays.asList(args).forEach((input)->{
             int listIterator=1;
-            String commonPrefix="";
+            String commonPrefix;
             int sum=input.length();
             String frstString= input;
             while(listIterator<frstString.length()){
