@@ -10,10 +10,8 @@ public class FibonacciRecursive {
     public static int fibonacci(int n){
         // first 10 fibonacci sequence
 
-        if(n==1){
-            return 1;
-        }else if(n==0){
-            return 0;
+        if(n<2){
+            return n;
         }
 
 
@@ -45,10 +43,10 @@ public class FibonacciRecursive {
     }
 
     public static void main(String[] args){
-        System.out.println(fibonacci(3));
-        System.out.println(fibonacci(2));
+        System.out.println(fibonacci(43));
+        //System.out.println(fibonacci(2));
 
-        System.out.println(iterative(3));
-        System.out.println(iterative(2));
+        //System.out.println(iterative(43));
+        //System.out.println(iterative(2));
     }
 }
