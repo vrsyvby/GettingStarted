@@ -14,10 +14,10 @@ public class Anagarams {
             b=b.toLowerCase();
             char[] aCharArray=a.toCharArray();
             char[] bCharArray=b.toCharArray();
-            String firstString=a;
-            int loopIterator=0;
-            while(loopIterator+1<a.length()){
-                String sample= firstString.substring(loopIterator,loopIterator+1);
+            String firstString=a.concat(b);
+
+            while(firstString.length()>0){
+                String sample= firstString.substring(0,1);
 
                 char[] samplecharArray=sample.toCharArray();
                 char samplechar=samplecharArray[0];
@@ -44,8 +44,8 @@ public class Anagarams {
                 b= b.replace(sample,"");
                 bCharArray=b.toCharArray();
 
+                firstString=firstString.replace(sample,"");
 
-                loopIterator++;
 
             }
 
