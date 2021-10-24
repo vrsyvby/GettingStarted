@@ -5,7 +5,7 @@ public class BubbleSort {
 
     public static void main(String[] args){
 
-        int[] elements={6,5,3,1,8,7,2,4};
+        int[] elements={99,44,6,2,1,5,63,87,283,4,0};
 
 
 //            6,5,3,1,8,7,2,4, i=0, j=1
@@ -14,20 +14,20 @@ public class BubbleSort {
 //            5,3,1,6,8,7,2,4, i=3, j=4
 //            5,3,1,6,7,8,2,4
 
-            int loop=0;
+
                     //int j=0;int j=1, int loop =0
 
-                while(loop<elements.length){
-                   int i=0;
-                   while(i<elements.length-1) {
+               for(int loop=0;loop<elements.length;loop++){
+
+                  for(int i=0;i<elements.length-1;i++){
                        if (elements[i+1] < elements[i]) {
                            int temp = elements[i+1];
                            elements[i+1] = elements[i];
                            elements[i] = temp;
                        }
-                       i++;
+
                    }
-                 loop++;
+
             }
 
         for(int k=0;k<elements.length;k++){
