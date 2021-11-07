@@ -59,6 +59,12 @@ public class MergeSort {
 
         elements=  mergesort(elements);
 
+        int k=0;
+        int[] curr1= Arrays.copyOfRange(elements,0, elements.length-k);
+        int[] curr2= Arrays.copyOfRange(elements,elements.length-k+1, elements.length);
+
+
+        Arrays.stream(elements).sorted();
         for(int i=0;i<elements.length;i++){
             System.out.print(elements[i]+" ");
         }
